@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		815183AF2FDBCEE4005BA95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183AE2FDBCEE4005BA95B /* AppDelegate.swift */; };
+		815183B12FDBCEE4005BA95B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183B02FDBCEE4005BA95B /* SceneDelegate.swift */; };
+		815183B42FDBCEE4005BA95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815183B22FDBCEE4005BA95B /* LaunchScreen.storyboard */; };
+		815183B72FDBCEE4005BA95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815183B52FDBCEE4005BA95B /* Main.storyboard */; };
+		815183C02FDBCEE4005BA95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183BF2FDBCEE4005BA95B /* AppDelegate.swift */; };
+		815183C32FDBCEE4005BA95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815183C12FDBCEE4005BA95B /* Main.storyboard */; };
+		815183CA2FDBCEE4005BA95B /* SearXNG for Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 815183C92FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		815183D42FDBCEE4005BA95B /* SearXNG for Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 815183D32FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		815183D92FDBCEE4005BA95B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8151839E2FDBCEE3005BA95B /* Main.html */; };
+		815183DA2FDBCEE4005BA95B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8151839E2FDBCEE3005BA95B /* Main.html */; };
+		815183DB2FDBCEE4005BA95B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 815183A02FDBCEE3005BA95B /* Icon.png */; };
+		815183DC2FDBCEE4005BA95B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 815183A02FDBCEE3005BA95B /* Icon.png */; };
+		815183DD2FDBCEE4005BA95B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 815183A12FDBCEE3005BA95B /* Style.css */; };
+		815183DE2FDBCEE4005BA95B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 815183A12FDBCEE3005BA95B /* Style.css */; };
+		815183DF2FDBCEE4005BA95B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183A22FDBCEE3005BA95B /* Script.js */; };
+		815183E02FDBCEE4005BA95B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183A22FDBCEE3005BA95B /* Script.js */; };
+		815183E12FDBCEE4005BA95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183A32FDBCEE3005BA95B /* ViewController.swift */; };
+		815183E22FDBCEE4005BA95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183A32FDBCEE3005BA95B /* ViewController.swift */; };
+		815183E32FDBCEE4005BA95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815183A42FDBCEE4005BA95B /* Assets.xcassets */; };
+		815183E42FDBCEE4005BA95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815183A42FDBCEE4005BA95B /* Assets.xcassets */; };
+		815183E52FDBCEE4005BA95B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183A62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift */; };
+		815183E62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815183A62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift */; };
+		815183FD2FDBCEE4005BA95B /* redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183F82FDBCEE4005BA95B /* redirect.js */; };
+		815183FE2FDBCEE4005BA95B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183F92FDBCEE4005BA95B /* popup.js */; };
+		815183FF2FDBCEE4005BA95B /* images in Resources */ = {isa = PBXBuildFile; fileRef = 815183FA2FDBCEE4005BA95B /* images */; };
+		815184002FDBCEE4005BA95B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 815183FB2FDBCEE4005BA95B /* popup.html */; };
+		815184012FDBCEE4005BA95B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 815183FC2FDBCEE4005BA95B /* manifest.json */; };
+		815184022FDBCEE4005BA95B /* redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183F82FDBCEE4005BA95B /* redirect.js */; };
+		815184032FDBCEE4005BA95B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 815183F92FDBCEE4005BA95B /* popup.js */; };
+		815184042FDBCEE4005BA95B /* images in Resources */ = {isa = PBXBuildFile; fileRef = 815183FA2FDBCEE4005BA95B /* images */; };
+		815184052FDBCEE4005BA95B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 815183FB2FDBCEE4005BA95B /* popup.html */; };
+		815184062FDBCEE4005BA95B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 815183FC2FDBCEE4005BA95B /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		815183CB2FDBCEE4005BA95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 815183982FDBCEE3005BA95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 815183C82FDBCEE4005BA95B;
+			remoteInfo = "SearXNG for Safari Extension (iOS)";
+		};
+		815183D52FDBCEE4005BA95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 815183982FDBCEE3005BA95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 815183D22FDBCEE4005BA95B;
+			remoteInfo = "SearXNG for Safari Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		815183EC2FDBCEE4005BA95B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				815183CA2FDBCEE4005BA95B /* SearXNG for Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183F32FDBCEE4005BA95B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				815183D42FDBCEE4005BA95B /* SearXNG for Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8151839F2FDBCEE3005BA95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		815183A02FDBCEE3005BA95B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		815183A12FDBCEE3005BA95B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		815183A22FDBCEE3005BA95B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		815183A32FDBCEE3005BA95B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		815183A42FDBCEE4005BA95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		815183A62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		815183AB2FDBCEE4005BA95B /* SearXNG for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SearXNG for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815183AE2FDBCEE4005BA95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		815183B02FDBCEE4005BA95B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		815183B32FDBCEE4005BA95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		815183B62FDBCEE4005BA95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		815183B82FDBCEE4005BA95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815183BD2FDBCEE4005BA95B /* SearXNG for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SearXNG for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815183BF2FDBCEE4005BA95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		815183C22FDBCEE4005BA95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		815183C42FDBCEE4005BA95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815183C92FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SearXNG for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815183CE2FDBCEE4005BA95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815183D32FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SearXNG for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815183D82FDBCEE4005BA95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815183F82FDBCEE4005BA95B /* redirect.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = redirect.js; path = Resources/redirect.js; sourceTree = "<group>"; };
+		815183F92FDBCEE4005BA95B /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		815183FA2FDBCEE4005BA95B /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		815183FB2FDBCEE4005BA95B /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		815183FC2FDBCEE4005BA95B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		815183A82FDBCEE4005BA95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183BA2FDBCEE4005BA95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183C62FDBCEE4005BA95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183D02FDBCEE4005BA95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		815183972FDBCEE3005BA95B = {
+			isa = PBXGroup;
+			children = (
+				8151839C2FDBCEE3005BA95B /* Shared (App) */,
+				815183A52FDBCEE4005BA95B /* Shared (Extension) */,
+				815183AD2FDBCEE4005BA95B /* iOS (App) */,
+				815183BE2FDBCEE4005BA95B /* macOS (App) */,
+				815183CD2FDBCEE4005BA95B /* iOS (Extension) */,
+				815183D72FDBCEE4005BA95B /* macOS (Extension) */,
+				815183AC2FDBCEE4005BA95B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8151839C2FDBCEE3005BA95B /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				815183A32FDBCEE3005BA95B /* ViewController.swift */,
+				815183A42FDBCEE4005BA95B /* Assets.xcassets */,
+				8151839D2FDBCEE3005BA95B /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		8151839D2FDBCEE3005BA95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8151839E2FDBCEE3005BA95B /* Main.html */,
+				815183A02FDBCEE3005BA95B /* Icon.png */,
+				815183A12FDBCEE3005BA95B /* Style.css */,
+				815183A22FDBCEE3005BA95B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		815183A52FDBCEE4005BA95B /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				815183F72FDBCEE4005BA95B /* Resources */,
+				815183A62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		815183AC2FDBCEE4005BA95B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				815183AB2FDBCEE4005BA95B /* SearXNG for Safari.app */,
+				815183BD2FDBCEE4005BA95B /* SearXNG for Safari.app */,
+				815183C92FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */,
+				815183D32FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		815183AD2FDBCEE4005BA95B /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				815183AE2FDBCEE4005BA95B /* AppDelegate.swift */,
+				815183B02FDBCEE4005BA95B /* SceneDelegate.swift */,
+				815183B22FDBCEE4005BA95B /* LaunchScreen.storyboard */,
+				815183B52FDBCEE4005BA95B /* Main.storyboard */,
+				815183B82FDBCEE4005BA95B /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		815183BE2FDBCEE4005BA95B /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				815183BF2FDBCEE4005BA95B /* AppDelegate.swift */,
+				815183C12FDBCEE4005BA95B /* Main.storyboard */,
+				815183C42FDBCEE4005BA95B /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		815183CD2FDBCEE4005BA95B /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				815183CE2FDBCEE4005BA95B /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		815183D72FDBCEE4005BA95B /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				815183D82FDBCEE4005BA95B /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		815183F72FDBCEE4005BA95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				815183F82FDBCEE4005BA95B /* redirect.js */,
+				815183F92FDBCEE4005BA95B /* popup.js */,
+				815183FA2FDBCEE4005BA95B /* images */,
+				815183FB2FDBCEE4005BA95B /* popup.html */,
+				815183FC2FDBCEE4005BA95B /* manifest.json */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		815183AA2FDBCEE4005BA95B /* SearXNG for Safari (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815183ED2FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari (iOS)" */;
+			buildPhases = (
+				815183A72FDBCEE4005BA95B /* Sources */,
+				815183A82FDBCEE4005BA95B /* Frameworks */,
+				815183A92FDBCEE4005BA95B /* Resources */,
+				815183EC2FDBCEE4005BA95B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				815183CC2FDBCEE4005BA95B /* PBXTargetDependency */,
+			);
+			name = "SearXNG for Safari (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "SearXNG for Safari (iOS)";
+			productReference = 815183AB2FDBCEE4005BA95B /* SearXNG for Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		815183BC2FDBCEE4005BA95B /* SearXNG for Safari (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815183F42FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari (macOS)" */;
+			buildPhases = (
+				815183B92FDBCEE4005BA95B /* Sources */,
+				815183BA2FDBCEE4005BA95B /* Frameworks */,
+				815183BB2FDBCEE4005BA95B /* Resources */,
+				815183F32FDBCEE4005BA95B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				815183D62FDBCEE4005BA95B /* PBXTargetDependency */,
+			);
+			name = "SearXNG for Safari (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "SearXNG for Safari (macOS)";
+			productReference = 815183BD2FDBCEE4005BA95B /* SearXNG for Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		815183C82FDBCEE4005BA95B /* SearXNG for Safari Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815183E92FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari Extension (iOS)" */;
+			buildPhases = (
+				815183C52FDBCEE4005BA95B /* Sources */,
+				815183C62FDBCEE4005BA95B /* Frameworks */,
+				815183C72FDBCEE4005BA95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SearXNG for Safari Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "SearXNG for Safari Extension (iOS)";
+			productReference = 815183C92FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		815183D22FDBCEE4005BA95B /* SearXNG for Safari Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815183F02FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari Extension (macOS)" */;
+			buildPhases = (
+				815183CF2FDBCEE4005BA95B /* Sources */,
+				815183D02FDBCEE4005BA95B /* Frameworks */,
+				815183D12FDBCEE4005BA95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SearXNG for Safari Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "SearXNG for Safari Extension (macOS)";
+			productReference = 815183D32FDBCEE4005BA95B /* SearXNG for Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		815183982FDBCEE3005BA95B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					815183AA2FDBCEE4005BA95B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					815183BC2FDBCEE4005BA95B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					815183C82FDBCEE4005BA95B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					815183D22FDBCEE4005BA95B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 8151839B2FDBCEE3005BA95B /* Build configuration list for PBXProject "SearXNG for Safari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 815183972FDBCEE3005BA95B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 815183AC2FDBCEE4005BA95B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				815183AA2FDBCEE4005BA95B /* SearXNG for Safari (iOS) */,
+				815183BC2FDBCEE4005BA95B /* SearXNG for Safari (macOS) */,
+				815183C82FDBCEE4005BA95B /* SearXNG for Safari Extension (iOS) */,
+				815183D22FDBCEE4005BA95B /* SearXNG for Safari Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		815183A92FDBCEE4005BA95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183DB2FDBCEE4005BA95B /* Icon.png in Resources */,
+				815183B42FDBCEE4005BA95B /* LaunchScreen.storyboard in Resources */,
+				815183D92FDBCEE4005BA95B /* Main.html in Resources */,
+				815183DF2FDBCEE4005BA95B /* Script.js in Resources */,
+				815183E32FDBCEE4005BA95B /* Assets.xcassets in Resources */,
+				815183B72FDBCEE4005BA95B /* Main.storyboard in Resources */,
+				815183DD2FDBCEE4005BA95B /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183BB2FDBCEE4005BA95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183DC2FDBCEE4005BA95B /* Icon.png in Resources */,
+				815183DE2FDBCEE4005BA95B /* Style.css in Resources */,
+				815183C32FDBCEE4005BA95B /* Main.storyboard in Resources */,
+				815183E02FDBCEE4005BA95B /* Script.js in Resources */,
+				815183E42FDBCEE4005BA95B /* Assets.xcassets in Resources */,
+				815183DA2FDBCEE4005BA95B /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183C72FDBCEE4005BA95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815184042FDBCEE4005BA95B /* images in Resources */,
+				815184052FDBCEE4005BA95B /* popup.html in Resources */,
+				815184062FDBCEE4005BA95B /* manifest.json in Resources */,
+				815184022FDBCEE4005BA95B /* redirect.js in Resources */,
+				815184032FDBCEE4005BA95B /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183D12FDBCEE4005BA95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183FF2FDBCEE4005BA95B /* images in Resources */,
+				815184002FDBCEE4005BA95B /* popup.html in Resources */,
+				815184012FDBCEE4005BA95B /* manifest.json in Resources */,
+				815183FD2FDBCEE4005BA95B /* redirect.js in Resources */,
+				815183FE2FDBCEE4005BA95B /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		815183A72FDBCEE4005BA95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183E12FDBCEE4005BA95B /* ViewController.swift in Sources */,
+				815183AF2FDBCEE4005BA95B /* AppDelegate.swift in Sources */,
+				815183B12FDBCEE4005BA95B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183B92FDBCEE4005BA95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183E22FDBCEE4005BA95B /* ViewController.swift in Sources */,
+				815183C02FDBCEE4005BA95B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183C52FDBCEE4005BA95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183E52FDBCEE4005BA95B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815183CF2FDBCEE4005BA95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815183E62FDBCEE4005BA95B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		815183CC2FDBCEE4005BA95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 815183C82FDBCEE4005BA95B /* SearXNG for Safari Extension (iOS) */;
+			targetProxy = 815183CB2FDBCEE4005BA95B /* PBXContainerItemProxy */;
+		};
+		815183D62FDBCEE4005BA95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 815183D22FDBCEE4005BA95B /* SearXNG for Safari Extension (macOS) */;
+			targetProxy = 815183D52FDBCEE4005BA95B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8151839E2FDBCEE3005BA95B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8151839F2FDBCEE3005BA95B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		815183B22FDBCEE4005BA95B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				815183B32FDBCEE4005BA95B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		815183B52FDBCEE4005BA95B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				815183B62FDBCEE4005BA95B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		815183C12FDBCEE4005BA95B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				815183C22FDBCEE4005BA95B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		815183E72FDBCEE4005BA95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		815183E82FDBCEE4005BA95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		815183EA2FDBCEE4005BA95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari.Extension";
+				PRODUCT_NAME = "SearXNG for Safari Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		815183EB2FDBCEE4005BA95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari.Extension";
+				PRODUCT_NAME = "SearXNG for Safari Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		815183EE2FDBCEE4005BA95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari";
+				PRODUCT_NAME = "SearXNG for Safari";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		815183EF2FDBCEE4005BA95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari";
+				PRODUCT_NAME = "SearXNG for Safari";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		815183F12FDBCEE4005BA95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari.Extension";
+				PRODUCT_NAME = "SearXNG for Safari Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		815183F22FDBCEE4005BA95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari.Extension";
+				PRODUCT_NAME = "SearXNG for Safari Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		815183F52FDBCEE4005BA95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari";
+				PRODUCT_NAME = "SearXNG for Safari";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		815183F62FDBCEE4005BA95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearXNG for Safari";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.micky.searxng-safari";
+				PRODUCT_NAME = "SearXNG for Safari";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8151839B2FDBCEE3005BA95B /* Build configuration list for PBXProject "SearXNG for Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815183E72FDBCEE4005BA95B /* Debug */,
+				815183E82FDBCEE4005BA95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815183E92FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815183EA2FDBCEE4005BA95B /* Debug */,
+				815183EB2FDBCEE4005BA95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815183ED2FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815183EE2FDBCEE4005BA95B /* Debug */,
+				815183EF2FDBCEE4005BA95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815183F02FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815183F12FDBCEE4005BA95B /* Debug */,
+				815183F22FDBCEE4005BA95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815183F42FDBCEE4005BA95B /* Build configuration list for PBXNativeTarget "SearXNG for Safari (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815183F52FDBCEE4005BA95B /* Debug */,
+				815183F62FDBCEE4005BA95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 815183982FDBCEE3005BA95B /* Project object */;
+}

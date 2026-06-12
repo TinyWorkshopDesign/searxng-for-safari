@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: -apple-system, sans-serif;
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      color: #1d1d1f;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f5f5f7; }
+      input[type="url"] { background: #1c1c1e; color: #f5f5f7; border-color: #3a3a3c; }
+    }
+    h1 { font-size: 15px; margin: 0 0 12px; }
+    label { font-size: 12px; display: block; margin-bottom: 4px; opacity: 0.7; }
+    input[type="url"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 7px 9px;
+      font-size: 13px;
+      border: 1px solid #d2d2d7;
+      border-radius: 7px;
+      outline: none;
+    }
+    input[type="url"]:focus { border-color: #0071e3; }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+    }
+    .toggle { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+    button {
+      background: #0071e3;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 7px 16px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    button:hover { background: #0077ed; }
+    #status {
+      font-size: 12px;
+      margin-top: 10px;
+      min-height: 15px;
+    }
+    .ok { color: #28a745; }
+    .err { color: #d70015; }
+  </style>
+</head>
+<body>
+  <h1>SearXNG for Safari</h1>
+  <label for="url">Your SearXNG instance URL</label>
+  <input type="url" id="url" placeholder="https://searx.example.com" spellcheck="false">
+  <div class="row">
+    <span class="toggle">
+      <input type="checkbox" id="enabled">
+      <label for="enabled" style="margin:0; opacity:1; font-size:13px;">Enabled</label>
+    </span>
+    <button id="save">Save</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
