@@ -53,6 +53,16 @@ That's it — every search from the address bar now lands on your SearXNG instan
 
 A content script injected at `document_start` on `duckduckgo.com` reads the `q` query parameter, stops the page load, and replaces the location with `<your-instance>/search?q=<query>`. The extension source lives in [`extension/`](extension/); the Xcode project wrapping it was generated with Apple's `safari-web-extension-converter`.
 
+## Development
+
+The Xcode project bundles a *copy* of the extension from `SearXNG for Safari/Shared (Extension)/Resources/`. After editing anything in `extension/`, run:
+
+```sh
+./sync-extension.sh
+```
+
+then rebuild the app.
+
 ## License
 
 [MIT](LICENSE)
