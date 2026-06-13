@@ -12,25 +12,32 @@ Safari doesn't allow custom search engines, so this Safari Web Extension takes t
 
 ## Requirements
 
-- macOS 11+ / iOS 15+ with Safari
-- Xcode (to build)
+- macOS 12+ / iOS 15+ with Safari
+- Xcode matching your macOS major version (Xcode 27 on macOS 27, etc.)
 - A SearXNG instance (self-hosted or any instance you trust)
 
 ## Build & install (macOS)
 
 ```sh
 git clone https://github.com/TinyWorkshopDesign/searxng-for-safari.git
-cd searxng-for-safari/"SearXNG for Safari"
+cd searxng-for-safari
+./sync-extension.sh
+cd "SearXNG for Safari"
 xcodebuild -scheme "SearXNG for Safari (macOS)" -configuration Release \
   -derivedDataPath build \
-  DEVELOPMENT_TEAM=<YOUR_TEAM_ID> CODE_SIGN_STYLE=Automatic build
-cp -R "build/Build/Products/Release/SearXNG for Safari.app" /Applications/
+  DEVELOPMENT_TEAM=<YOUR_TEAM_ID> CODE_SIGN_STYLE=Automatic \
+  MACOSX_DEPLOYMENT_TARGET=12.0 build
+rm -rf "/Applications/SearXNG for Safari.app"
+ditto "build/Build/Products/Release/SearXNG for Safari.app" \
+      "/Applications/SearXNG for Safari.app"
 open "/Applications/SearXNG for Safari.app"
 ```
 
 Alternatively, open `SearXNG for Safari.xcodeproj` in Xcode, select the **SearXNG for Safari (macOS)** scheme, set your signing team, and build.
 
 > Without an Apple Development certificate you can sign ad hoc, but you'll need to enable *Develop → Allow Unsigned Extensions* in Safari on every launch.
+
+> **Don't skip the `rm -rf` before `ditto`.** `ditto` doesn't remove destination files that aren't in the source, so any orphan from a previous install (including Syncthing `*.sync-conflict-*` files, if you sync this folder) will survive and invalidate the new bundle's code-signing seal — Safari then silently refuses to load the extension. If that happens, the diagnostic is `spctl -a -vv` reporting "a sealed resource is missing or invalid".
 
 ## Install (iOS / iPadOS)
 
